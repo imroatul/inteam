@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iim.tolahtoleh.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="384dp"
+        android:layout_height="111dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/toolbarstyle"
+        android:minHeight="?attr/actionBarSize"
+        tools:layout_editor_absoluteY="-1dp"
+        app:layout_constraintRight_toRightOf="parent">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:id="@+id/drawerLayoutget"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/activitylayout">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/drawerLayout">
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <TabHost
+        android:layout_width="292dp"
+        android:layout_height="56dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.96" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="-120dp"
+        tools:layout_editor_absoluteX="366dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="154dp"
+        android:layout_height="43dp"
+        android:text="Bakiak"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <SearchView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <SearchView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</android.support.constraint.ConstraintLayout>
