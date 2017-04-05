@@ -1,4 +1,4 @@
-package com.example.rayhan.tolahtoleh;
+package com.example.afaiz.cardview;
 
 import org.junit.Test;
 
