@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rayhan.tolahtoleh.MainActivity">
+    tools:context="com.example.rayhan.tolahtoleh.MainActivity"
+    android:background="@color/warnaToscaPrimary">
 
     <Button
         android:id="@+id/button1"
@@ -18,6 +19,7 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="0dp"
         android:background="@color/warnaToscaMakanan"
+
         tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
     <Button
