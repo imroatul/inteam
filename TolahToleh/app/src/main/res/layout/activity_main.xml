@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context="inteam.tolahtoleh.MainActivity">
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="MAKANAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@color/warnaToscaMakanan"
+
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="MINUMAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:background="@color/warnaToscaMinuman"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="PAKAIAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="278dp"
+        android:background="@color/warnaToscaPakaian"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="LAIN-LAIN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="417dp"
+        android:background="@color/warnaToscaLainlain"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
 </android.support.constraint.ConstraintLayout>

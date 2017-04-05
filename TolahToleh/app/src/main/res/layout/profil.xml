@@ -3,12 +3,88 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/editTextNamaLengkap"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="146dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nama Lengkap"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <RadioButton
+        android:id="@+id/radioButtonLakiLaki"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPerempuan"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="221dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Alamat"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <EditText
+        android:id="@+id/editTextTelp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Telepon"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="384dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <EditText
+        android:id="@+id/editTextPassw"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="427dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
+    <EditText
+        android:id="@+id/editTextKota"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="264dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Kota"
+        android:textColor="@color/warnaAbuabuPrimary" />
+
 </LinearLayout>
