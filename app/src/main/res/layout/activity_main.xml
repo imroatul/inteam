@@ -1,119 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.iim.tolahtoleh.MainActivity">
+    tools:context="com.example.rayhan.tolahtoleh.MainActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="384dp"
-        android:layout_height="111dp"
-        android:id="@+id/toolbar"
-        android:background="@color/colorPrimary"
-        android:theme="@style/toolbarstyle"
-        android:minHeight="?attr/actionBarSize"
-        tools:layout_editor_absoluteY="-1dp"
-        app:layout_constraintRight_toRightOf="parent">
-    </android.support.v7.widget.Toolbar>
-
-    <android.support.v4.widget.DrawerLayout
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:id="@+id/drawerLayoutget"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="MAKANAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp">
+        android:background="@color/warnaToscaMakanan"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/activitylayout">
-        </RelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="MINUMAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:background="@color/warnaToscaMinuman"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/drawerLayout">
-        </RelativeLayout>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="PAKAIAN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="278dp"
+        android:background="@color/warnaToscaPakaian"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
-    </android.support.v4.widget.DrawerLayout>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="382dp"
+        android:layout_height="139dp"
+        android:text="LAIN-LAIN"
+        android:textColor="@color/warnaPutihPrimary"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="417dp"
+        android:background="@color/warnaToscaLainlain"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
-    <TabHost
-        android:layout_width="292dp"
-        android:layout_height="56dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="50dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:id="@+id/tab1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:weightSum="1">
-
-                    <TabWidget
-                        android:id="@android:id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2.96" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-            </FrameLayout>
-        </LinearLayout>
-    </TabHost>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteY="-120dp"
-        tools:layout_editor_absoluteX="366dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="154dp"
-        android:layout_height="43dp"
-        android:text="Bakiak"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <SearchView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
-
-    <SearchView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
 
 </android.support.constraint.ConstraintLayout>
