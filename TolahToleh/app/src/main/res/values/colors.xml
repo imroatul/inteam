@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="warnaPutihPrimary">#FFFFFF</color>
+    <color name="warnaPutihBack">#FAFAFA</color>
+    <color name="warnaHitamPrimary">#212121</color>
+    <color name="warnaAbuabuPrimary">#757575</color>
+    <color name="warnaToscaPrimary">#00bfa4</color>
+    <color name="warnaToscaMakanan">#9900AB94</color>
+    <color name="warnaToscaMinuman">#99009884</color>
+    <color name="warnaToscaPakaian">#99008573</color>
+    <color name="warnaToscaLainlain">#99007263</color>
+    <color name="warnaKuningPrimary">#FFD600</color>
+    <color name="warnaMerahPrimary">#F44336</color>
+</resources>
