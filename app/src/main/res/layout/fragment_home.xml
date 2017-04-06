@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.tolahtoleh.tolahtolehnew.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFF"
+        android:text="Hi Guys ! The Battle Begin!"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="100dp"/>
+
+</FrameLayout>

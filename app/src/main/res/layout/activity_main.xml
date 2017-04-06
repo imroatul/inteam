@@ -1,65 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rayhan.tolahtoleh.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.tolahtoleh.tolahtolehnew.MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="382dp"
-        android:layout_height="139dp"
-        android:text="MAKANAN"
-        android:textColor="@color/warnaPutihPrimary"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:background="@color/warnaToscaMakanan"
-        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="382dp"
-        android:layout_height="139dp"
-        android:text="MINUMAN"
-        android:textColor="@color/warnaPutihPrimary"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="139dp"
-        android:background="@color/warnaToscaMinuman"
-        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/warnaToscaPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="382dp"
-        android:layout_height="139dp"
-        android:text="PAKAIAN"
-        android:textColor="@color/warnaPutihPrimary"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="278dp"
-        android:background="@color/warnaToscaPakaian"
-        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="382dp"
-        android:layout_height="139dp"
-        android:text="LAIN-LAIN"
-        android:textColor="@color/warnaPutihPrimary"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="417dp"
-        android:background="@color/warnaToscaLainlain"
-        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+    </android.support.design.widget.AppBarLayout>
 
 
+    <include layout="@layout/content_main" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
-</android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
