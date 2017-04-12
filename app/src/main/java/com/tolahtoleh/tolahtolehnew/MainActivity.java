@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,12 +19,21 @@ import com.tolahtoleh.tolahtolehnew.Tab.SlidingTabLayout;
 public class MainActivity extends AppCompatActivity {
     private SlidingTabLayout mSlidingTabLayout;
     private ViewPager mViewpager;
+
+    private DrawerLayout nDrawerLayout;
+    private ActionBarDrawerToggle nToggle;
+    private Toolbar nToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+       // nToolbar = (Toolbar) findViewById(R.id.nav_action);
+        //setSupportActionBar(nToolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
                 mSlidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.warnaPutihPrimary));//warna line indicator
                 mSlidingTabLayout.setCustomTabView(R.layout.tab_view, R.id.tv_tab);
                 mSlidingTabLayout.setViewPager(mViewpager);
+
+        //menu Navigasi Drawer
+        nDrawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
+        nToggle = new ActionBarDrawerToggle(this, nDrawerLayout, R.string.open, R.string.close);
+
+        nDrawerLayout.addDrawerListener(nToggle);
+        nToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -51,16 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+      if(nToggle.onOptionsItemSelected(item)){
+          return true;
+      }
+       return super.onOptionsItemSelected(item);
     }
 }

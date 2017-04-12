@@ -28,7 +28,7 @@ import com.tolahtoleh.tolahtolehnew.R;
 public class MyAdapter extends FragmentPagerAdapter {
     private Context mContext;
     private String[] titles ={"A","B","C","D","E"};
-    int[] icon = new int[]{R.drawable.ic_home_white_24dp,R.drawable.ic_shopping_cart_white_24dp,R.drawable.ic_account_circle_white_24dp,R.drawable.ic_menu_white_24dp,R.drawable.ic_shopping_cart_white_24dp};
+    int[] icon = new int[]{R.drawable.ic_home_white_24dp,R.drawable.ic_shopping_cart_white_24dp,R.drawable.ic_account_circle_white_24dp,R.drawable.ic_toys_white_24dp,R.drawable.ic_shopping_cart_white_24dp};
     private int heightIcon;
 
     public MyAdapter(FragmentManager fm, Context c){
