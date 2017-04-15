@@ -4,7 +4,14 @@
     android:layout_height="match_parent"
     android:background="#000"
     tools:context="com.tolahtoleh.tolahtolehnew.fragment.HomeFragment">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+
+
+</LinearLayout>
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
