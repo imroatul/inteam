@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout nDrawerLayout;
     private ActionBarDrawerToggle nToggle;
-    private Toolbar nToolbar;
+    //private Toolbar nToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
