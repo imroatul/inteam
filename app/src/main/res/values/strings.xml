@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">TolahTolehNew</string>
+    <string name="app_name">Tolah Toleh</string>
+
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login_member">Login</string>
+    <string name="title_activity_signup_member">Sign up Now</string>
 </resources>
