@@ -1,9 +1,12 @@
-package com.example.afaiz.sp;
+package com.tolahtoleh.tolahtolehbeta;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+/**
+ * Created by KING on 22/05/2017.
+ */
 
 public class SplashActivity extends Activity {
 
@@ -14,7 +17,7 @@ public class SplashActivity extends Activity {
         Thread thread = new Thread() {
             public void run() {
                 try {
-                        sleep(3000);
+                    sleep(3000);
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {

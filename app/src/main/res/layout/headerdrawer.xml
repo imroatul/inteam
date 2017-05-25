@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="140dp"
-    android:background="@drawable/logo"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/warnaToscaLainlain"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingBottom="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="190dp"
+    android:paddingTop="50dp"
+    >
+    <ImageView
+        android:id="@+id/iconlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/warnaPutihPrimary"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com"
+        android:textColor="@color/warnaPutihPrimary"/>
 </LinearLayout>
