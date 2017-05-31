@@ -6,17 +6,18 @@
     tools:context="com.tolahtoleh.tolahtolehbeta.SignupMember"
     android:orientation="vertical"
     android:gravity="center">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tolah Toleh"
         android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/namamember"
+        android:layout_alignStart="@+id/namamember" />
 
     <RelativeLayout
     android:layout_width="match_parent"
@@ -32,7 +33,7 @@
             android:id="@+id/imageView" />
 
         <EditText
-            android:id="@+id/NamaLengkap"
+            android:id="@+id/namamember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="12"
@@ -41,7 +42,9 @@
             android:hint="Nama Lengkap"
             android:layout_alignBottom="@+id/imageView"
             android:layout_toEndOf="@+id/imageView"
-            android:layout_marginStart="20dp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView" />
 
         <ImageView
             android:layout_width="24dp"
@@ -50,18 +53,20 @@
             android:id="@+id/imageViewr"
             android:layout_marginTop="40dp"
             android:layout_below="@+id/imageView"
-            android:layout_alignStart="@+id/imageView" />
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView" />
 
         <EditText
-            android:id="@+id/Email"
+            android:id="@+id/emailmember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageViewr"
-            android:layout_alignEnd="@+id/NamaLengkap"
+            android:layout_alignEnd="@+id/namamember"
             android:ems="12"
             android:hint="Email"
             android:inputType="textPersonName"
-            android:text="" />
+            android:text=""
+            android:layout_alignRight="@+id/namamember" />
 
         <ImageView
             android:layout_width="24dp"
@@ -70,57 +75,43 @@
             android:id="@+id/image"
             android:layout_below="@+id/imageViewr"
             android:layout_alignStart="@+id/imageViewr"
-            android:layout_marginTop="42dp" />
+            android:layout_marginTop="42dp"
+            android:layout_alignLeft="@+id/imageViewr" />
 
         <EditText
-            android:id="@+id/Password"
+            android:id="@+id/passwordmember"
             android:password="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/image"
-            android:layout_alignStart="@+id/Email"
+            android:layout_alignStart="@+id/emailmember"
             android:ems="12"
             android:inputType="textPersonName"
             android:text=""
-            android:hint="Password"/>
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="41dp"
-            android:text="Laki - Laki"
-            android:layout_below="@+id/image"
-            android:layout_alignStart="@+id/image" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/Password"
-            android:layout_alignTop="@+id/radioButton1"
-            android:layout_marginEnd="27dp"
-            android:text="Perempuan" />
-
+            android:hint="Password"
+            android:layout_alignLeft="@+id/emailmember" />
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButton2"
             android:layout_marginTop="20dp"
             android:text="Sign Up"
             android:background="@color/warnaToscaPrimary"
             android:textColor="@color/warnaPutihPrimary"
-            android:layout_alignStart="@+id/radioButton1"
-            android:layout_alignEnd="@+id/Password" />
+            android:layout_alignStart="@+id/passwordmember"
+            android:layout_alignEnd="@+id/passwordmember"
+            android:layout_below="@+id/passwordmember"
+            android:layout_alignLeft="@+id/passwordmember"
+            android:layout_alignRight="@+id/passwordmember" />
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sudah Punya Akun?"
             android:layout_marginTop="15dp"
-            android:layout_below="@+id/button"
-            android:layout_toEndOf="@+id/image"/>
+            android:layout_below="@+id/buttonRegister"
+            android:layout_toEndOf="@+id/image"
+            android:layout_toRightOf="@+id/image" />
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
@@ -129,7 +120,9 @@
             android:textColor="@color/colorPrimary"
             android:layout_alignBottom="@+id/textView2"
             android:layout_alignRight="@+id/textView2"
-            android:layout_marginEnd="-60dp"/>
+            android:layout_marginEnd="-60dp"
+            android:layout_marginRight="-60dp" />
+
     </RelativeLayout>
 
 </LinearLayout>
