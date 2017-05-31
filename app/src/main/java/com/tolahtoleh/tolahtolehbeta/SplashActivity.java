@@ -17,11 +17,15 @@ public class SplashActivity extends Activity {
         Thread thread = new Thread() {
             public void run() {
                 try {
-                    sleep(3000);
+                    sleep(1500);
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    //if sudah login, ngecekshared pref
+                    startActivity(new Intent(SplashActivity.this, Home.class));
+
+                    //else
+                    //startActivity(new Intent(SplashActivity.this, Home.class));
                     finish();
                 }
             }

@@ -5,16 +5,16 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item android:id="@+id/action_login"
+        android:title="Login"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
     <item
         android:id="@+id/action_search"
         android:orderInCategory="100"
         android:icon="@drawable/ic_search_white_24dp"
         android:title="@string/action_settings"
         app:showAsAction="always" />
-
-
-
-
 </menu>
 
 

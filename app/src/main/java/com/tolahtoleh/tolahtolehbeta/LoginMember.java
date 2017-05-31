@@ -91,8 +91,8 @@ public class LoginMember extends AppCompatActivity implements View.OnClickListen
                                         "User Login Successful",
                                         Toast.LENGTH_LONG
                                 ).show();
-                                //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                //finish();
+                                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                finish();
                             }else {
                                 Toast.makeText(
                                         getApplicationContext(),

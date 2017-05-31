@@ -35,7 +35,7 @@
             android:name=".SignupMember"
             android:label="@string/title_activity_signup_member" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".Main2"
+        <activity android:name=".Home"
             android:label="@string/app_name"></activity>
     </application>
 
