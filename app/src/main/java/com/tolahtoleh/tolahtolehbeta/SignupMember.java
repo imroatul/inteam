@@ -53,11 +53,11 @@ public class SignupMember extends AppCompatActivity implements View.OnClickListe
             }
         });*/
 
-        if (SharedPrefManager.getInstance(this).isLoggedIn()){
+      /*  if (SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
             startActivity(new Intent(this,ProfileActivity.class));
             return;
-        }
+        }*/
         //SIGN UP / REGISTER
         namamember = (EditText) findViewById(R.id.namamember);
         passwordmember = (EditText) findViewById(R.id.passwordmember);
