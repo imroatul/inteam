@@ -1,4 +1,4 @@
-package com.tolahtoleh.tolahtolehbeta.Adapter;
+package com.tolahtoleh.tolahtolehbeta.Adapter2;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2;
 import com.tolahtoleh.tolahtolehbeta.R;
 
 import java.util.ArrayList;
@@ -16,39 +17,39 @@ import java.util.List;
  * Created by KING on 31/05/2017.
  */
 
-public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
+public class GridAdapter2 extends RecyclerView.Adapter<GridAdapter2.ViewHolder> {
 
-    List<EndangeredItem> mItems;
+    List<com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2> mItems;
 
-    public GridAdapter() {
+    public GridAdapter2() {
         super();
-        mItems = new ArrayList<EndangeredItem>();
-        EndangeredItem nama = new EndangeredItem();
-        nama.setName("bandrek");
-        nama.setHarga("Rp.3000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.mibandrek);
-        mItems.add(nama);
-
-        nama = new EndangeredItem();
-        nama.setName("es teler");
+        mItems = new ArrayList<com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2>();
+        com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2 nama = new com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2();
+        nama.setName("getuk");
         nama.setHarga("Rp.5000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.miesler);
+        nama.setWa("081337564234");
+        nama.setThumbnail(R.drawable.getuk);
         mItems.add(nama);
 
-        nama = new EndangeredItem();
-        nama.setName("saraba");
-        nama.setHarga("Rp.4000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.misaraba);
+        nama = new com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2();
+        nama.setName("chocholate jember");
+        nama.setHarga("Rp.20.000");
+        nama.setWa("081337564234");
+        nama.setThumbnail(R.drawable.chocho);
         mItems.add(nama);
 
-        nama = new EndangeredItem();
-        nama.setName("soto dahlok");
-        nama.setHarga("Rp.6000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.misotodahlok);
+        nama = new com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2();
+        nama.setName("suwar-suwir");
+        nama.setHarga("Rp.20.000");
+        nama.setWa("081337564234");
+        nama.setThumbnail(R.drawable.suwar);
+        mItems.add(nama);
+
+        nama = new com.tolahtoleh.tolahtolehbeta.Adapter2.EndangeredItem2();
+        nama.setName("proll tape");
+        nama.setHarga("Rp.16.000");
+        nama.setWa("081337564234");
+        nama.setThumbnail(R.drawable.proll);
         mItems.add(nama);
 
 
@@ -74,7 +75,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        EndangeredItem nature = mItems.get(i);
+        EndangeredItem2 nature = mItems.get(i);
         viewHolder.tvspecies.setText(nature.getName());
         viewHolder.tvspekta.setText(nature.getHarga());
         viewHolder.tvspek.setText(nature.getWa());

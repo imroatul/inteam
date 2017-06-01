@@ -1,4 +1,4 @@
-package com.tolahtoleh.tolahtolehbeta.Adapter;
+package com.tolahtoleh.tolahtolehbeta.Adapter3;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,39 +16,39 @@ import java.util.List;
  * Created by KING on 31/05/2017.
  */
 
-public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
+public class GridAdapter3 extends RecyclerView.Adapter<GridAdapter3.ViewHolder> {
 
-    List<EndangeredItem> mItems;
+    List<EndangeredItem3> mItems;
 
-    public GridAdapter() {
+    public GridAdapter3() {
         super();
-        mItems = new ArrayList<EndangeredItem>();
-        EndangeredItem nama = new EndangeredItem();
-        nama.setName("bandrek");
-        nama.setHarga("Rp.3000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.mibandrek);
+        mItems = new ArrayList<EndangeredItem3>();
+        EndangeredItem3 nama = new EndangeredItem3();
+        nama.setName("batik hadiningrat");
+        nama.setHarga("Rp.90.000");
+        nama.setWa("085675123099");
+        nama.setThumbnail(R.drawable.hadining);
         mItems.add(nama);
 
-        nama = new EndangeredItem();
-        nama.setName("es teler");
-        nama.setHarga("Rp.5000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.miesler);
+        nama = new EndangeredItem3();
+        nama.setName("kaos jember");
+        nama.setHarga("Rp.70.000");
+        nama.setWa("085675123099");
+        nama.setThumbnail(R.drawable.kaos);
         mItems.add(nama);
 
-        nama = new EndangeredItem();
-        nama.setName("saraba");
-        nama.setHarga("Rp.4000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.misaraba);
+        nama = new EndangeredItem3();
+        nama.setName("batik orange girls");
+        nama.setHarga("Rp.120.000");
+        nama.setWa("085675123099");
+        nama.setThumbnail(R.drawable.orange);
         mItems.add(nama);
 
-        nama = new EndangeredItem();
-        nama.setName("soto dahlok");
-        nama.setHarga("Rp.6000");
-        nama.setWa("081330373296");
-        nama.setThumbnail(R.drawable.misotodahlok);
+        nama = new EndangeredItem3();
+        nama.setName("hem batik pria");
+        nama.setHarga("Rp.86.000");
+        nama.setWa("085675123099");
+        nama.setThumbnail(R.drawable.hem);
         mItems.add(nama);
 
 
@@ -74,7 +74,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        EndangeredItem nature = mItems.get(i);
+        EndangeredItem3 nature = mItems.get(i);
         viewHolder.tvspecies.setText(nature.getName());
         viewHolder.tvspekta.setText(nature.getHarga());
         viewHolder.tvspek.setText(nature.getWa());
