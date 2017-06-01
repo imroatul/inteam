@@ -19,17 +19,17 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="360dp"
-            android:src="@drawable/dj"
+            android:src="@drawable/dj5"
             android:id="@+id/kelebihan"
-            android:layout_marginBottom="80dp"
-            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="61dp"
+            android:layout_alignBottom="@+id/textView3"
             android:layout_centerHorizontal="true" />
 
         <TextView
             android:text="Toko Oleh-Oleh yang menjual beberapa varian makanan dan minuman khas jember."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/warnaHitamPrimary"
+            android:textColor="@color/abuabu"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="20sp"
