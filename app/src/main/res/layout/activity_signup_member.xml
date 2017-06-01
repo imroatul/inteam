@@ -7,122 +7,85 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tolah Toleh"
-        android:gravity="center"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/namamember"
-        android:layout_alignStart="@+id/namamember" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo2"/>
 
-    <RelativeLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center">
+    android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
         <!-- Login progress -->
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/color_neutral_user"
-            android:layout_marginTop="71dp"
-            android:id="@+id/imageView" />
 
         <EditText
             android:id="@+id/namamember"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:ems="12"
-            android:inputType="textPersonName"
-            android:text=""
-            android:hint="Nama Lengkap"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_toEndOf="@+id/imageView"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/imageView" />
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="Fullname"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:drawableLeft="@drawable/color_neutral_user"/>
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/color_email"
-            android:id="@+id/imageViewr"
-            android:layout_marginTop="40dp"
-            android:layout_below="@+id/imageView"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_alignLeft="@+id/imageView" />
 
         <EditText
             android:id="@+id/emailmember"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageViewr"
-            android:layout_alignEnd="@+id/namamember"
-            android:ems="12"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
             android:hint="Email"
-            android:inputType="textPersonName"
-            android:text=""
-            android:layout_alignRight="@+id/namamember" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/color_password"
-            android:id="@+id/image"
-            android:layout_below="@+id/imageViewr"
-            android:layout_alignStart="@+id/imageViewr"
-            android:layout_marginTop="42dp"
-            android:layout_alignLeft="@+id/imageViewr" />
+            android:drawableLeft="@drawable/color_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/passwordmember"
             android:password="true"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/image"
-            android:layout_alignStart="@+id/emailmember"
-            android:ems="12"
-            android:inputType="textPersonName"
-            android:text=""
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
             android:hint="Password"
-            android:layout_alignLeft="@+id/emailmember" />
+            android:drawableLeft="@drawable/color_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"/>
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Sign Up"
+            android:layout_marginTop="20dip"
             android:background="@color/warnaToscaPrimary"
-            android:textColor="@color/warnaPutihPrimary"
-            android:layout_alignStart="@+id/passwordmember"
-            android:layout_alignEnd="@+id/passwordmember"
-            android:layout_below="@+id/passwordmember"
-            android:layout_alignLeft="@+id/passwordmember"
-            android:layout_alignRight="@+id/passwordmember" />
+            android:text="SIGN UP"
+            android:textColor="@color/warnaPutihPrimary" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sudah Punya Akun?"
-            android:layout_marginTop="15dp"
-            android:layout_below="@+id/buttonRegister"
-            android:layout_toEndOf="@+id/image"
-            android:layout_toRightOf="@+id/image" />
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
+            android:textSize="18sp"
             android:textColor="@color/colorPrimary"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_alignRight="@+id/textView2"
-            android:layout_marginEnd="-60dp"
-            android:layout_marginRight="-60dp" />
-
-    </RelativeLayout>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

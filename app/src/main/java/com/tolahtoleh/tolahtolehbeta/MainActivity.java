@@ -35,9 +35,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static android.R.attr.name;
+import static android.R.attr.thickness;
 import static android.view.View.*;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
@@ -52,68 +53,86 @@ public class MainActivity extends AppCompatActivity{
          *Setup the DrawerLayout and NavigationView
          */
 
-             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-             mNavigationView = (NavigationView) findViewById(R.id.shitstuff) ;
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mNavigationView = (NavigationView) findViewById(R.id.shitstuff);
 
         /**
          * Lets inflate the very first fragment
          * Here , we are inflating the TabFragment as the first Fragment
          */
 
-             mFragmentManager = getSupportFragmentManager();
-             mFragmentTransaction = mFragmentManager.beginTransaction();
-             mFragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+        mFragmentManager = getSupportFragmentManager();
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+        mFragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
         /**
          * Setup click events on the Navigation View Items.
          */
 
-             mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-             @Override
-             public boolean onNavigationItemSelected(MenuItem menuItem) {
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
                 mDrawerLayout.closeDrawers();
 
 
-                 if (menuItem.getItemId() == R.id.nav_item_beranda) {
-                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                     xfragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
-                 }
+                if (menuItem.getItemId() == R.id.nav_item_beranda) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.nav_item_profile) {
+                    Intent login = new Intent(getApplicationContext(), ProfileActivity.class);
+                    startActivity(login);
+                }
                  if (menuItem.getItemId() == R.id.nav_item_sent) {
                      FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                      fragmentTransaction.replace(R.id.containerView,new SentFragment()).commit();
                  }
-                 if (menuItem.getItemId() == R.id.nav_item_login) {
-                     Intent login = new Intent(getApplicationContext(),LoginMember.class);
-                     startActivity(login);
+                if (menuItem.getItemId() == R.id.nav_item_logout) {
+                    Intent logout = new Intent(getApplicationContext(), Home.class);
+                    startActivity(logout);
+                    finish();
                  }
 
-                 return false;
+                return false;
             }
 
         });
 
 
-
         /**
          * Setup Drawer Toggle of the Toolbar
          */
-                Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-                setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
                /* android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
                 */
-                ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this,mDrawerLayout, toolbar,R.string.app_name,
+        ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name,
                 R.string.app_name);
 
-                mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-                mDrawerToggle.syncState();
+        mDrawerToggle.syncState();
 
 
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main2, menu);
         return true;
     }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_login:
+                SharedPrefManager.getInstance(this).Logout();
+                finish();
+                startActivity(new Intent(this, Home.class));
+                break;
+            case R.id.action_aboutus:
+                startActivity(new Intent(this, AboutUs.class));
+                break;
+        }
+        return true;
+    }
+
 }

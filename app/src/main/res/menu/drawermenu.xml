@@ -2,35 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="Beranda"
         android:id="@+id/nav_item_beranda"
-        android:icon="@drawable/squad"/>
-    <item android:title="Login"
-        android:id="@+id/nav_item_login"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:title="Profile User"
+        android:id="@+id/nav_item_profile"
         android:icon="@drawable/color_neutral_user"/>
 
     <item android:title="Sent"
           android:id="@+id/nav_item_sent"
           android:icon="@drawable/sent"/>
 
-    <item android:title="Drafts"
-          android:id="@+id/nav_item_draft"
-          android:icon="@drawable/draft"/>
-    <item android:title="Others">
-        <menu>
-            <item
-                android:title="Spam"
-                android:icon="@drawable/spam"/>
-            <item
-                android:title="Bin"
-                android:icon="@drawable/bin"/>
-        </menu>
-    </item>
+
 
     <group android:id="@+id/group_settings_id">
-
-        <item android:title="Settings"
-              android:icon="@drawable/settings"/>
         <item android:title="Help"
-             android:icon="@drawable/help"/>
+            android:icon="@drawable/help"/>
+
+        <item
+            android:id="@+id/nav_item_logout"
+            android:title="Log Out"
+            android:icon="@drawable/spam"/>
     </group>
 
 

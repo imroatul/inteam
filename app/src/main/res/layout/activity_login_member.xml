@@ -8,72 +8,49 @@
     android:gravity="center">
 
     <!-- Login progress -->
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tolah Toleh"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_marginTop="-50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/logo2"/>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp">
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:src="@drawable/color_email"
-            android:layout_below="@+id/textView4"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
         <EditText
             android:id="@+id/emailmember"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:ems="10"
-            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/color_email"
             android:hint="Email"
-            android:layout_above="@+id/imageView3"
-            android:layout_alignEnd="@+id/textView5"
-            android:layout_alignRight="@+id/textView5" />
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:singleLine="true"/>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/color_password"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2"
-            android:layout_marginTop="30dp"
-            android:layout_alignLeft="@+id/imageView2" />
 
         <EditText
             android:password="true"
             android:id="@+id/passwordmember"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Password"
             android:inputType="textPersonName"
-            android:layout_alignRight="@+id/emailmember"
-            android:layout_alignBottom="@+id/imageView3"
-            android:layout_alignEnd="@+id/emaillogin"/>
-
-
-    </RelativeLayout>
+            android:drawableLeft="@drawable/color_password"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:singleLine="true"/>
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textColor="@color/warnaPutihPrimary"
@@ -89,14 +66,16 @@
         android:layout_marginTop="12dp"
         android:text="Belum punya akun ?"
         android:textSize="18sp"
+        android:layout_gravity="center"
         android:layout_below="@+id/buttonLogin" />
     <TextView
         android:id="@+id/textdaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daftar sekarang"
+        android:layout_gravity="center"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         />
-
+    </LinearLayout>
 </LinearLayout>

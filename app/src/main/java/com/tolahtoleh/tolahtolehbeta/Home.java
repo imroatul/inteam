@@ -30,6 +30,7 @@ public class Home extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return super.onCreateOptionsMenu(menu);
 
     }
@@ -39,6 +40,11 @@ public class Home extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.action_login){
             Intent intent = new Intent(this, LoginMember.class);
+            startActivity(intent);
+            return true;
+        }
+        if(id == R.id.action_aboutus){
+            Intent intent = new Intent(this, AboutUs.class);
             startActivity(intent);
             return true;
         }

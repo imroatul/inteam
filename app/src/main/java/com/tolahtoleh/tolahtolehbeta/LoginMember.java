@@ -50,9 +50,9 @@ public class LoginMember extends AppCompatActivity implements View.OnClickListen
             }
         });
 
-      /* if (SharedPrefManager.getInstance(this).isLoggedIn()){
-            //finish();
-            //startActivity(new Intent(this,ProfileActivity.class));
+     /* if (SharedPrefManager.getInstance(this).isLoggedIn()){
+            finish();
+            startActivity(new Intent(this,MainActivity.class));
             return;
         }*/
         //LOGIN
@@ -83,7 +83,8 @@ public class LoginMember extends AppCompatActivity implements View.OnClickListen
                                         .userLogin(
                                                 obj.getInt("id"),
                                                 obj.getString("emailmember"),
-                                                obj.getString("passwordmember")
+                                                obj.getString("passwordmember"),
+                                                obj.getString("namamember")
                                         );
 
                                 Toast.makeText(

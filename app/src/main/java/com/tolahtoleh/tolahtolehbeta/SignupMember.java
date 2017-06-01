@@ -115,6 +115,7 @@ public class SignupMember extends AppCompatActivity implements View.OnClickListe
         };
 
         RequestHandler.getInstance(this).addToRequestQueue(stringrequest);
+        startActivity(new Intent(this, LoginMember.class));
     }
 
     @Override
